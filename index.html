@@ -9,12 +9,12 @@
   <body>
     <nav>
       <div class="nav-title">
-        <img src="Images/Group 40071 (2).png" >
-        <h3>Seabeach <span style="color: #FF5400;">travel</span></h3>
+        <img src="Images/plane.png" />
+        <h3>Seabeach <span style="color: #ff5400">travel</span></h3>
       </div>
-      <img src="Images/menu.png" class="menu">
+      <img src="Images/menu.png" class="menu" />
       <ul>
-        <li><a href="" style="color: #FF5400;;">Home</a></li>
+        <li><a href="" style="color: #ff5400">Home</a></li>
         <li><a href="">Packages</a></li>
         <li><a href="">Testimonial</a></li>
         <li><a href="">Blog</a></li>
@@ -31,10 +31,10 @@
         </p>
         <div class="searchbox-container">
           <input type="text" placeholder="Where go" class="description" />
-          <select  class="description">
+          <select class="description">
             <option value="" disabled selected>When</option>
           </select>
-          <select  class="description">
+          <select class="description">
             <option value="" disabled selected>Select type</option>
           </select>
 
@@ -88,116 +88,147 @@
 
         <div class="desination-image-container wrapper-font">
           <div class="wrapper">
-            <div class="maldives"> 
-                Maldives
-            </div>
-              <div class="indonesia">
-                Indonesia
-              </div>
+            <div class="maldives">Maldives</div>
+            <div class="indonesia">Indonesia</div>
           </div>
           <div class="wrapper">
-            <div class="srilanka">
-                Srilanka
-              </div>
-              <div class="north-america" > 
-                North America
-              </div>
-              <div class="kashmir">
-                Kashmir
-              </div>
+            <div class="srilanka">Srilanka</div>
+            <div class="north-america">North America</div>
+            <div class="kashmir">Kashmir</div>
           </div>
-         <div class="wrapper">
-            <div  class="bangladesh" >
-                Bangladesh
-              </div>
-              <div class="bandarban">
-                Bandarban
-              </div>
-         </div>
+          <div class="wrapper">
+            <div class="bangladesh">Bangladesh</div>
+            <div class="bandarban">Bandarban</div>
+          </div>
         </div>
       </section>
       <!-- Why Choose Us -->
       <section class="choose">
         <h3 class="common-title">Why Choose Us</h3>
-        <p class="description choose-description">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
-         <div class="card-container">
-            <div class="card">
-                <img src="Images/hotel 1.png" alt="">
-                <h1>Handpicked Hotels</h1>
-                <p class="description">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
-            </div>
-            <div class="card" style="background: rgba(41, 206, 246, 0.05);
-
-            ;">
-                <img src="Images/map 1.png" alt="">
-                <h1>World Class Service</h1>
-                <p class="description">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
-            </div>
-            <div class="card">
-                <img src="Images/price-tag 1.png" alt="">
-                <h1>Best Price Guarantee</h1>
-                <p class="description">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
-         </div>
+        <p class="description choose-description">
+          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+          odio sit massa. Sodales dictumst nec nibh pellentesque.
+        </p>
+        <div class="card-container">
+          <div class="card">
+            <img src="Images/hotel.png" alt="" />
+            <h1>Handpicked Hotels</h1>
+            <p class="description">
+              Amet consectetur. Vulputate commodo felis molestie risus ornare
+              nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
+              Habitant adipiscing risus natoque aliquet.
+            </p>
+          </div>
+          <div class="card" style="background: rgba(41, 206, 246, 0.05)">
+            <img src="Images/map.png" alt="" />
+            <h1>World Class Service</h1>
+            <p class="description">
+              Amet consectetur. Vulputate commodo felis molestie risus ornare
+              nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
+              Habitant adipiscing risus natoque aliquet.
+            </p>
+          </div>
+          <div class="card">
+            <img src="Images/price-tag.png" alt="" />
+            <h1>Best Price Guarantee</h1>
+            <p class="description">
+              Amet consectetur. Vulputate commodo felis molestie risus ornare
+              nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
+              Habitant adipiscing risus natoque aliquet.
+            </p>
+          </div>
         </div>
+      </section>
+      <section class="rating">
+<h1 class="common-title">Rate us</h1>
+<div id="app">
+  <div class="card">
+    <div class="card-content">
+      <div class="media-content">
+        <p class="title is-4">Star Rating</p>
+        <p class="subtitle is-6">A simple VueJS rating component</p> 
+      </div>
+      <star-rating :max="5" :current="value"></star-rating><br>
+      <br>
+      <button class="button" @click="randomValue">Play with values ({{value}})</button>
+    </div>
+  </div>
+</div>
+<script type="text/x-template" id="star-rating">
+  <div class="star-rating">
+    <span v-for="n in max">&star;</span>
+    <div class="star-rating__current" :style="{width: getRating + '%'}">
+      <span v-for="n in max">&starf;</span>
+    </div>
+  </div>
+</script>
+
       </section>
       <section class="perfect-place">
         <div class="place">
           <div class="place-info">
             <h3 class="common-title">A Simple Perfect Place To Get Lost</h3>
             <p class="description">
-              Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. 
+              Amet consectetur. Vulputate commodo felis molestie risus ornare
+              nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
             </p>
             <ul>
-              <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
-              <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+              <li>
+                Adipiscing ornare pellentesque mauris volutpat tortor vitae
+                platea porta lacus. Lectus suspendisse nullam.
+              </li>
+              <li>
+                Adipiscing ornare pellentesque mauris volutpat tortor vitae
+                platea porta lacus. Lectus suspendisse nullam.
+              </li>
             </ul>
             <button class="btn-primary">See More</button>
           </div>
           <div class="place-img">
-            Watch Our Mountain in <br>Bangladesh
+            Watch Our Mountain in <br />Bangladesh
             <!-- <img src="images/progress.png" class="progress-bar"> -->
           </div>
         </div>
         <div class="info">
           <div class="form-wrapper">
             <h1>Newsletter</h1>
-            <p class="description">Get your daily dose of travel news & tips. Sign<br>up today!</p>
-           <hr>
+            <p class="description">
+              Get your daily dose of travel news & tips. Sign<br />up today!
+            </p>
+            <hr />
             <form action="" class="form-container">
-              <input type="text" placeholder="Enter your name">
-              <input type="email" required placeholder="Enter your email">
+              <input type="text" placeholder="Enter your name" />
+              <input type="email" required placeholder="Enter your email" />
               <div class="btn">Subscribe</div>
             </form>
           </div>
-      
+
           <div class="info-img">
             <div class="discount">
               <p>Travel.com</p>
-             <h2> Save up to 70%</h2>
+              <h2>Save up to 70%</h2>
             </div>
           </div>
-        
         </div>
       </section>
     </main>
     <footer>
-        <div class="title-wrap">
-          <img src="Images/Group 40071 (2).png">
-          <h3> SeaBeach <span style="color: #FF5400;">Travel</span></h3>
-        </div>
-       
-        <p>Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae blandit orci potenti vulputate. Leo erat maecenas vitae elementum ultricies nullam. </p>
-        <div class="icon-container">
-          <img src="Images/Social.png" alt="">
-        
-        </div>
-           
-        <hr>
-        <div>
-            2017, All Rights Reserved.
-        </div>
-     
+      <div class="title-wrap">
+        <img src="Images/plane.png" />
+        <h3>SeaBeach <span style="color: #ff5400">Travel</span></h3>
+      </div>
 
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae
+        blandit orci potenti vulputate. Leo erat maecenas vitae elementum
+        ultricies nullam.
+      </p>
+      <div class="icon-container">
+        <img src="Images/Social.png" alt="" />
+      </div>
+
+      <hr />
+      <div>2017, All Rights Reserved.</div>
     </footer>
   </body>
 </html>
