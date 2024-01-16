@@ -141,27 +141,14 @@
       </section>
       <section class="rating">
 <h1 class="common-title">Rate us</h1>
-<div id="app">
-  <div class="card">
-    <div class="card-content">
-      <div class="media-content">
-        <p class="title is-4">Star Rating</p>
-        <p class="subtitle is-6">A simple VueJS rating component</p> 
-      </div>
-      <star-rating :max="5" :current="value"></star-rating><br>
-      <br>
-      <button class="button" @click="randomValue">Play with values ({{value}})</button>
-    </div>
-  </div>
-</div>
-<script type="text/x-template" id="star-rating">
-  <div class="star-rating">
-    <span v-for="n in max">&star;</span>
-    <div class="star-rating__current" :style="{width: getRating + '%'}">
-      <span v-for="n in max">&starf;</span>
-    </div>
-  </div>
-</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
 
       </section>
       <section class="perfect-place">
