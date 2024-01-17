@@ -563,39 +563,60 @@ footer h3 {
 
 /* responsive for mobile */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 600px) {
   nav ul {
     display: none;
   }
-
   .menu {
     display: block;
     width: 24px;
     height: 24px;
     flex-shrink: 0;
   }
-
-  .searchbox-container,
-  .popular-tour,
-  .wrapper,
-  .place,
-  .info {
-    flex-direction: column;
+  nav{
+    justify-content: space-around;
   }
+
+  main,nav{
+    margin:auto 20px;
+  }
+  .nav-title{
+    font-size: 1.5rem;
+  }
+
+  .banner {
+    height: 900px;
+  }
+
+
+
   .banner-title,
-  .choose-description {
+  .choose-description, .banner p,.popular-tour {
     padding: 10px 5px;
   }
 
-  .form-wrapper{
-    width: 88%;
+  .searchbox-container input,
+  .btn-primary,
+  select {
+    width: 200px;
+   
   }
 
-  .searchbox-container input,
-.btn-primary,
-select {
-  width: 300px;
-}
+  .popular-tour .description,.popular-image-container{
+    width: 100%;
+  }
+
+  .destination p{
+    padding: 5px 0px;
+  }
+
+  .searchbox-container,
+  .wrapper,
+  .place,.popular-tour,.info
+   {
+    flex-direction: column;
+  }
+
 
   .maldives,
   .bandarban,
@@ -604,10 +625,39 @@ select {
   .north-america,
   .srilanka,
   .indonesia,
-  .place-info
+  .place-info,.place-img,.info-img
    {
     width: 100%;
   }
+
+  .card,.rating ,.form-wrapper{
+    width: 90%;
+    margin: auto 10px;
+    padding:  20px;
+  }
+
+  .form-wrapper{
+    width: 90%;
+    height: 1000px;
+  }
+
+  .place-img,.info-img{
+    height: 300px;
+    margin-top: 20px;
+  }
+
+ 
+
+
+
+  /* 
+  
+ 
+
+ 
+ 
+  
+
 
 
   .place-img,
@@ -620,21 +670,12 @@ select {
   .info {
     height: 850px;
   }
-
-  .card {
-    /* align-items: center; */
-    width: 90%;
-  }
-
-  .banner {
-    height: 800px;
-  }
-
+  
   .banner p {
     padding: 5px 15px;
   }
 
   footer {
     padding: 50px 20px;
-  }
+  } */
 }
