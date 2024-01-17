@@ -408,10 +408,7 @@ li {
   align-items: center;
 }
 
-.progress-bar {
-  width: 80%;
-  text-align: center;
-}
+
 
 .info {
   height: 422px;
@@ -603,7 +600,7 @@ footer h3 {
   }
 
   .popular-tour .description,.popular-image-container{
-    width: 100%;
+    width: 90%;
   }
 
   .destination p{
@@ -631,20 +628,30 @@ footer h3 {
   }
 
   .card,.rating ,.form-wrapper{
-    width: 90%;
+    width: 88%;
     margin: auto 10px;
     padding:  20px;
   }
 
-  .form-wrapper{
+  .info{
     width: 90%;
-    height: 1000px;
+    height: 900px;
   }
 
   .place-img,.info-img{
-    height: 300px;
-    margin-top: 20px;
+    height: 450px;
+    width: 100%;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
+
+
+  footer {
+    padding: 50px 20px;
+  }
+  
 
  
 
